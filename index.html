@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Post Management</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>All Posts</h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search by Title">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="searchPosts()">Search</button>
+                    </div>
+                </div>
+                <ul id="post-list" class="list-group"></ul>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination" id="pagination"></ul>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <h2>Create New Post</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="post-title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="post-content" placeholder="Content"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="createPost()">Create Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
