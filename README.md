@@ -1,4 +1,7 @@
-# Create , Edit , Delete and List Post
+# List and search posts
+# create new Posts
+# edit their own Posts
+# delete their own Posts
  
 1.Database Setup:
     Execute the demo.sql file on your MySQL server. This will create the necessary database and tables.
