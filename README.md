@@ -1,4 +1,4 @@
-# commvault_code_challenge
+# Create , Edit , Delete and List Post
 
 1.Database Setup:
     Execute the demo.sql file on your MySQL server. This will create the necessary database and tables.
